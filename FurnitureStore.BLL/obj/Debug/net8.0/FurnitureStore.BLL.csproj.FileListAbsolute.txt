@@ -1,0 +1,16 @@
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\bin\Debug\net8.0\FurnitureStore.BLL.deps.json
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\bin\Debug\net8.0\FurnitureStore.BLL.dll
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\bin\Debug\net8.0\FurnitureStore.BLL.pdb
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\bin\Debug\net8.0\FurnitureStore.DAL.dll
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\bin\Debug\net8.0\FurnitureStore.DAL.pdb
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.csproj.AssemblyReference.cache
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.AssemblyInfoInputs.cache
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.AssemblyInfo.cs
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.csproj.CoreCompileInputs.cache
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.sourcelink.json
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.csproj.CopyComplete
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.dll
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\refint\FurnitureStore.BLL.dll
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\FurnitureStore.BLL.pdb
+D:\A\web21-5\FurnitureStore\FurnitureStore.BLL\obj\Debug\net8.0\ref\FurnitureStore.BLL.dll
