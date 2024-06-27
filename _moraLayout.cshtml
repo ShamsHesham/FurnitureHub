@@ -1,0 +1,146 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Furniture Website</title>
+    <!--Link To Css-->
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <!--Box Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        .green_color {
+            color: green;
+        }
+
+
+        .btn-custom {
+            border: none; /* Remove the border */
+            background-color: transparent; /* Remove any background color */
+            padding: 0; /* Remove padding if not needed */
+        }
+
+        .badge {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 4px 8px;
+            font-size: 10.5px;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .fa-shopping-cart {
+            font-size: 32px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    @{
+        var cartItemCount = Model?.CartItemCount ?? 0;
+    }
+    
+        <header>
+            <a href="#" class="logo">Furniture<span>Hub</span></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navbar">
+                <li><a href="/Customer/Home/Index">Home</a></li>
+                <li><a href="/Customer/Home/AllProducts">Products</a></li>
+              
+                <li><a href="/Customer/Home/AboutUs">AboutUs</a></li>
+
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><span>Welcome, @User.Identity.Name.Split('@')[0]</span></li>
+                    <li><a href="/User/Account/SignOut">Sign Out</a></li>
+                        <form asp-action="Index" asp-controller="Cart" asp-area="Customer" method="post">
+
+                            <button type="submit" class="btn-custom">
+                                <i class='fa fa-shopping-cart green_color fa-2x'></i>
+                                <span id="cartBadgeCount" class="badge">@Model?.CartItemCount</span>
+                            </button>
+                        </form>
+
+                }
+                else
+                {
+                    <li><a href="/User/Account/Register">Register</a></li>
+                    <li><a href="/User/Account/Login">Sign In</a></li>
+                    <form asp-action="Index" asp-controller="Cart" asp-area="Customer" method="post">
+
+                        <button type="submit" class="btn-custom">
+                            <i class='fa fa-shopping-cart green_color fa-2x'></i>
+                        <span id="cartBadgeCount" class="badge">@Model?.CartItemCount</span>
+                        </button>
+                    </form>
+                 }
+
+
+
+           
+            
+
+            </ul>
+        </header>
+
+        <br />
+     
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Off <span>Market</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet minus mollitia impedit qui asperiores!</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Services</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Product</h3>
+            <li><a href="#">Sofa's</a></li>
+            <li><a href="#">Chair's</a></li>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Office</a></li>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Contact</h3>
+            <span>Denver, Colorado, USA 10001</span>
+            <span>+1 100 1004 0002</span>
+            <span>brian@OffMarket.com</span>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; Mohamed Zaadik All Right Reserved.</p>
+    </div>
+   
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    }
+</body>
+
+
+
+
+</html>

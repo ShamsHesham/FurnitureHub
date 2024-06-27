@@ -1,0 +1,18 @@
+﻿@using System.Security.Claims
+@using FurnitureStore.BLL.Interfaces
+@inject IUnitOfWork _unitOfWork
+
+@{
+    var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    int cartCount = 0;
+
+    if (!string.IsNullOrEmpty(userId))
+    {
+        cartCount = _unitOfWork.ShoppingCartRepository.GetAlls(u => u.AppuserId == userId).Count();
+    }
+}
+
+<a class="nav-link" href="/Customer/Cart/Index">
+    <i class="fa fa-shopping-cart"></i>
+    <span id="cart-count" class="badge badge-pill badge-danger">@cartCount</span>
+</a>
